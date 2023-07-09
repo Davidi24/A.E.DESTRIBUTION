@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2023 at 05:16 PM
+-- Generation Time: Jul 09, 2023 at 03:30 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -44,11 +44,9 @@ CREATE TABLE `business_info` (
 --
 
 INSERT INTO `business_info` (`business_id`, `name`, `address`, `phone`, `email`, `website`, `License`, `tax_number`, `bank_accaunt`) VALUES
-(35, 'Name', 'Address', '0677564436', 'dkeci21@epoka.edu.al', 'wqwqwqwq', '', 1234, 'L1234'),
-(36, 'Name2', 'Address2', '0677564436', 'dkeci21@epoka.edu.alggfgf', 'wqwqwqwq', '', 1234, 'L1234'),
-(37, 'Name3', 'Address', '0677564436', 'dkeci21@epoka.edu.al', 'wqwqwqwq', '', 1234, 'L1234'),
-(38, 'Name4', 'Address', '0677564436', 'dkeci21@epoka.edu.al', 'wqwqwqwq', '', 1234, 'L1234'),
-(46, 'Name5', 'Address', '0677564436', 'dkeci21@epoka.edu.al', 'wqwqwqwq', '', 1, 'L1234');
+(48, 'A.E.Destribution', 'Rruga 12345', '0677564436', 'kecidavid22@gmail.com', 'www.webside.com', '', 1234, '1111'),
+(49, 'Biznesii1', 'Rruga 123456', '0677564436', 'kecidavid22@gmail.com', 'www.webside.com', '', 1235, '1112'),
+(50, 'Biznesii2', 'Rruga 12346', '0677564436', 'kecidavid22@gmail.com', 'www.webside.com', '', 1235, '1111');
 
 -- --------------------------------------------------------
 
@@ -71,9 +69,11 @@ CREATE TABLE `klienti` (
 --
 
 INSERT INTO `klienti` (`id`, `name`, `email`, `phone`, `company_name`, `date`, `client_id`) VALUES
-(2048, 'David', 'dkeci21@epoka.edu.al', '0677564436', 'sdjkkjcsbdkvbsbsdkjbksdjbsdksj', '2023-07-06', '1234fz'),
-(2049, 'David', 'dkeci21@epoka.edu.aljkdhdhsgjds', '0677564436', 'ddd', '2023-07-06', '2'),
-(2050, 'Davidddd', 'dkeci21@epoka.edu.alwwww', '0677564436', 'cccc', '2023-07-06', '3');
+(2054, 'David Keci', 'kecidavid22@gmail.com', '0677564436', 'A.E.Destribution', '2023-07-09', '1111'),
+(2055, 'Name1 Surname1', 'kecidavid23@gmail.com', '0677564436', 'Kompania1', '2023-07-09', '1112'),
+(2056, 'Name2 Surname2', 'kecidavid24@gmail.com', '0677564436', 'Kompania3', '2023-07-09', '1113'),
+(2057, 'Name4 Surname4', 'kecidavid25@gmail.com', '0677564436', 'Kompania4', '2023-07-09', '1114'),
+(2058, 'Name6 Surname6', 'kecidavid26@gmail.com', '0677564436', 'Kompania6', '2023-07-09', '1115');
 
 -- --------------------------------------------------------
 
@@ -97,12 +97,10 @@ CREATE TABLE `product_info` (
 --
 
 INSERT INTO `product_info` (`product_id`, `businesss_id`, `artikulli`, `emertimi`, `saisa`, `njesia_matse`, `cmimi`, `total`) VALUES
-(43, 35, 'A1', 'A1', 1, 'kg', 1, 1),
-(44, 35, 'b', 'b', 2, 'kg', 1, 2),
-(45, 36, 'c', 'a', 10, 'kg', 111, 1110),
-(46, 37, 'A1', 'a', 111, 'kg', 111, 12321),
-(47, 38, 'b', 'a', 111, '111', 111, 12321),
-(55, 46, 'dd', 'dd', 3, 'dd', 3, 9);
+(57, 48, 'Artikulli1', 'Emerimi1', 10, 'kg', 120, 1200),
+(58, 48, 'Artikulli2', 'Emerimi2', 20, 'g', 220, 4400),
+(59, 49, 'Artikulli1', 'Emerimi1', 10, 'kg', 120, 1200),
+(60, 50, 'Artikulli1', 'Emerimi1', 30, 'kg', 420, 12600);
 
 -- --------------------------------------------------------
 
@@ -122,21 +120,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `password`) VALUES
-(40, 'David', 'dkeci21@epoka.edu.alggfgf', '$2y$10$.RcIDw4ArnURAP5xhY3ouOF2Im2VYG8lcL4Vz.Z.yzxQmG4eA5Jii'),
-(41, 'David', 'dkeci21@epoka.edu.alggfgfs', '$2y$10$27/64s.bscAmHR32zWg8Tuj/ABGb9s/6sZOYcOwO5DGc7eb4RXs8O'),
-(42, 'David', 'dkeci21@epoka.edu.al', '$2y$10$kp/CHj8x6PAPUIKN7gtj5OquHfMpgpd/D4AfXniH/9BkvIvNFYLAi'),
-(43, 'David', 'dkeci21@epoka.edu.alggfgf777', '$2y$10$JOWk.GGkYnJj7aSAQhcWPOvvPcBFMTXB503fiay7Rrk.hnWkLGS0a'),
-(44, 'David', 'dkeci21@epoka.edu.alggfgflllll', '$2y$10$ftNLJxlDBYk/UT3D.b06J.B5z8eoDEWfWBTOtRRoXU8TJtLOYvCna'),
-(45, 'David', 'dkeci21@epoka.edu.alggfgfdfdff', '$2y$10$e7NP2DmIuFPSmYuYsZw/S.0NM1qK61V.nZ/1O17qZehMxqLkH5j3e'),
-(46, 'David', 'dkeci21@epoka.edu.alggfgfddddd', '$2y$10$lVYuvx2B7HqAvSLHn/ZJMuhz32LqeDbYVh6JcIBPalxEQSjeurqVm'),
-(47, 'David', 'dkeci21@epoka.edu.alggfgfuyuuu', '$2y$10$3WpQ6fz.c3dhbGt0X1bAT.vgVTsSHCthIe0r9xnGoPmdxv/zoNFZW'),
-(48, 'David', 'dkeci21@epoka.edu.alggfgfiiiii', '$2y$10$6sWHL8CwEmqurJCcHTKabu/taGl7aUWTX0VVvwaVWVgoPRLNSyHj2'),
-(49, 'David', 'dkeci21@epoka.edu.alggfgfyttyt', '$2y$10$jO4YaSnDDZcz7DlpI4WbPu63LMqxcEPWAk18ehEHRbVEi51hZ336C'),
-(50, 'David', 'dkeci21@epoka.edu.alggfgfkhglh', '$2y$10$qGqvtvEZt1yPlBB7L0CDmuJcp8jlTJLQ9gdvz9vAd7P0Rh4YU6TQ2'),
-(51, 'David', 'dkeci21@epoka.edu.alggfgfukkkk', '$2y$10$Wiup9OCXOx3nOvGdXHp0F.K3algGYs7UijqDEgfz2p833ZQnT8Roq'),
-(52, 'David', 'dkeci21@epoka.edu.alggfgfhhhhh', '$2y$10$vo2UEsxu35DMe9kkZWxPje5WTy0Z/ORHFVNp0loH0guOcxyiPXI3C'),
-(53, 'David', 'dkeci21@epoka.edu.alggfgfffdfd', '$2y$10$eA7cmSM30wFUl4JySET4pufsAamiEWbrV5OBU63mhywgJ/6WVKF5q'),
-(54, 'David', 'dkeci21@epoka.edu.alggfgfdd', '$2y$10$HebB2uvpLdpSr5RsWdmsouDRRpq5RQ0te8AX/SPf9OjTliNLSDIL2');
+(61, 'David', 'dkeci21@epoka.edu.al', '$2y$10$np1S/GolhuB4kbzt.yESj.Ft65/Lj6vHtaWvB/.VWRuMT5eg4egBS');
 
 --
 -- Indexes for dumped tables
@@ -177,25 +161,25 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `business_info`
 --
 ALTER TABLE `business_info`
-  MODIFY `business_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `business_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `klienti`
 --
 ALTER TABLE `klienti`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2051;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2059;
 
 --
 -- AUTO_INCREMENT for table `product_info`
 --
 ALTER TABLE `product_info`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 
 --
 -- Constraints for dumped tables

@@ -13,7 +13,7 @@ document.getElementById("log-Inn").addEventListener("submit", function(event) {
     passwordError.textContent = "";
   
     if (email === "") {
-      emailError.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Ju lutem vendosni nje email!";
+      emailError.innerHTML = "Ju lutem vendosni nje email!";
       emailInput.focus();
       return;
     }
@@ -21,7 +21,7 @@ document.getElementById("log-Inn").addEventListener("submit", function(event) {
 
   
     if (password === "") {
-      passwordError.textContent = "&nbsp&nbsp&nbsp&nbsp&nbspJu lutem vendosni nje password!";
+      passwordError.innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbspJu lutem vendosni nje password!";
       passwordInput.focus();
       return;
     }
@@ -35,7 +35,7 @@ document.getElementById("log-Inn").addEventListener("submit", function(event) {
           var response = JSON.parse(xhr1.responseText);
   
           if (response.available) {
-            emailError.innerHTML = "Nuk ka nje adres me kete email!";
+            emailError.innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbspNuk ka nje adres me kete email!";
             emailInput.focus();
 
           } else {

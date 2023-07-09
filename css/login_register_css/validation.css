@@ -11,7 +11,7 @@
     font-size: 14px;
     margin-top: -7px;
     color: rgb(185, 80, 80) !important;
-    margin-left: -144px;
+    margin-left: -35%;
 }
 #passwordError{
     
@@ -25,10 +25,11 @@
 
 #EmailError{
     font-size: 14px;
-    margin-right: 120px;
+    margin-right: 150px;
     margin-top: -7px;
     color: rgb(185, 80, 80) !important;
     width: 100%;
+    margin-left: -14%;
 }
 
 #PasswordError{

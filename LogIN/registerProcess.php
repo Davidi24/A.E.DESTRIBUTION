@@ -39,7 +39,7 @@ $stmt->bind_param("sss", $_POST["name"], $_POST["email"], $pass_hash);
 
 try {
     if ($stmt->execute()) {
-        header("location:  ../index.php");
+        header("location:  ../CreateUser/index1.php");
     } else {
         echo "Failed to insert data.";
     }

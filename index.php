@@ -59,7 +59,7 @@
 
 
    
-  <h1 class="titlee">Mire se erdhet ne A.E.DESTRIBUTION</h1>
+  <h1 class="titlee">Mire se erdhet ne A.E.DISTRIBUTION</h1>
 
       <div class="LogIn">
 
@@ -126,7 +126,7 @@
         </div>
         <div class="z">
           <input type="email" placeholder="Email" name="email" id="email">
-          <div id="emailError" style="width: 100%;"></div>
+          <div id="emailError" style="width: 124%;"></div>
         </div>
         <div style="width: 150%; margin-left: 20%">
           <label class="rules">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Duhet te perdorni te pakten 8 karaktere!.</label>

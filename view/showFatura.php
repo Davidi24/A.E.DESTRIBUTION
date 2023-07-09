@@ -8,7 +8,7 @@
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       /* Adjust the number of columns as needed */
       grid-gap: 20px;
       /* Adjust the gap between grid items */
@@ -46,14 +46,6 @@
 
 <body>
   <div class="grid-containerr">
-    <button id="Home"> Faqja Kryesore</button>
-    <script>
-      function locationn() {
-        window.location.href = "../CreateUser/index1.php";
-      }
-      var SHBillbutton = document.getElementById("Home");
-      SHBillbutton.addEventListener("click", locationn);
-    </script>
 
 
     <h1>Faturat e Krijuara</h1>
@@ -97,11 +89,11 @@
           $productInfoResult = $mysqli->query($productInfoQuery);
 
           if ($productInfoResult->num_rows > 0) {
-            echo "<div class=''>";
+            echo "<div class='pdinfo'>";
 
             echo "<h2>Product Info:</h2>";
-            echo "<table >";
-            echo "<thead class='TABLEE'>";
+            echo "<table class='TABLEE'>";
+            echo "<thead >";
             echo "<tr>";
             echo "<th>Product ID</th>";
             echo "<th>Artikulli</th>";
@@ -117,10 +109,10 @@
             // Output data of each product_info row
             while ($row = $productInfoResult->fetch_assoc()) {
               echo "<div class='BODYY'>";
-              echo "<tr>";
-              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["product_id"] . "</td>";
-              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;" . $row["artikulli"] . "</td>";
-              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;" . $row["emertimi"] . "</td>";
+              echo "<tr BODYYy>";
+              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["product_id"] . "</td>";
+              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["artikulli"] . "</td>";
+              echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["emertimi"] . "</td>";
               echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;" . $row["saisa"] . "</td>";
               echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" . $row["njesia_matse"] . "</td>";
               echo "<td>&nbsp;&nbsp;&nbsp;&nbsp;" . $row["cmimi"] . "</td>";

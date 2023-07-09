@@ -46,7 +46,7 @@ $conn->close();
 </script>
 <div class="content read">
 	<h2 style="font-size: 30px; margin-bottom: 0;">Te dhenat e klienteve</h2>
-	<a href="./createUser.php" class="create-contact">Krijo Klienteve</a>
+	<a href="./createUser.php" class="create-contact">Krijo Klientin</a>
 
 
 

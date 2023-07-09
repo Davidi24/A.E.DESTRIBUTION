@@ -29,19 +29,19 @@ document.getElementById("signUp2").addEventListener("submit", function(event) {
     }
   
     if (email === "") {
-      emailError.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;Ju lutem vendosni emailin!";
+      emailError.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ju lutem vendosni emailin!";
       emailInput.focus();
       return;
     }
   
     if (!isValidEmail(email)) {
-      emailError.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emaili nuk eshte valid!";
+      emailError.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emaili nuk eshte valid!";
       emailInput.focus();
       return;
     }
   
     if (password === "") {
-      passwordError.textContent = "Ju lutem vendosni nje password";
+      passwordError.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ju lutem vendosni nje password";
       passwordInput.focus();
       return;
     }
@@ -62,7 +62,7 @@ document.getElementById("signUp2").addEventListener("submit", function(event) {
           var response = JSON.parse(xhr.responseText);
   
           if (!response.available) {
-            emailError.innerHTML = "Email already exist";
+            emailError.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emaili eshte i zene!";
             emailInput.focus();
           } else {  
             
